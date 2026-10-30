@@ -16,8 +16,12 @@ cask "arrowslit" do
 
   app "Arrowslit.app"
 
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/Arrowslit.app"]
+  # The app is not notarized yet; this skips the one-time Open Anyway step.
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:           ["-dr", "com.apple.quarantine", "{{appdir}}/Arrowslit.app"],
+        writable_paths: ["Arrowslit.app"],
+        writable_base:  :appdir
   end
 
   uninstall quit: "com.j4yop.arrowslit"
