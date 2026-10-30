@@ -16,6 +16,10 @@ cask "arrowslit" do
 
   app "Arrowslit.app"
 
+  postflight do
+    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/Arrowslit.app"]
+  end
+
   uninstall quit: "com.j4yop.arrowslit"
 
   zap trash: [
