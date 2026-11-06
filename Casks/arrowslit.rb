@@ -4,7 +4,7 @@ cask "arrowslit" do
 
   url "https://github.com/j4yop/arrowslit/releases/download/v#{version}/Arrowslit-#{version}.dmg"
   name "Arrowslit"
-  desc "Local-only productivity nook for the Mac notch"
+  desc "Local-only productivity nook for the notch"
   homepage "https://github.com/j4yop/arrowslit"
 
   livecheck do
