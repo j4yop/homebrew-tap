@@ -4,7 +4,7 @@ cask "dragconvert" do
 
   url "https://github.com/j4yop/DragConvert/releases/download/v#{version}/DragConvert-#{version}.zip"
   name "DragConvert"
-  desc "Free, open-source radial file converter for macOS"
+  desc "Free, open-source radial file converter"
   homepage "https://github.com/j4yop/DragConvert"
 
   livecheck do
@@ -27,8 +27,8 @@ cask "dragconvert" do
   uninstall quit: "com.dragconvert.app"
 
   zap trash: [
-    "~/Library/Containers/com.dragconvert.app",
     "~/Library/Caches/com.dragconvert.app",
+    "~/Library/Containers/com.dragconvert.app",
     "~/Library/Preferences/com.dragconvert.app.plist",
     "~/Library/Saved Application State/com.dragconvert.app.savedState",
   ]
