@@ -1,6 +1,6 @@
 cask "dragconvert" do
-  version "0.7.1"
-  sha256 "9960df4eac3d776d14b08a9f57a6642900728a7937ccd43d52845be08f8f396b"
+  version "0.8.0"
+  sha256 "c1ac05d9945548d421141274f4b81a938a0c7ac40cd47d41b8781da7eea23dcf"
 
   url "https://github.com/j4yop/DragConvert/releases/download/v#{version}/DragConvert-#{version}.zip"
   name "DragConvert"
