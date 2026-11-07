@@ -1,6 +1,6 @@
 cask "arrowslit" do
-  version "0.12.4"
-  sha256 "e7a501cb8425173e7e5e2e4508e015000b628c9148688d6283e7a6ec5dc57989"
+  version "0.12.5"
+  sha256 "4f2f798d614b4b833452bf2721db254b2422dd9f503a969a74826508f9d319d5"
 
   url "https://github.com/j4yop/arrowslit/releases/download/v#{version}/Arrowslit-#{version}.dmg"
   name "Arrowslit"
